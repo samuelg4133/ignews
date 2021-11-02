@@ -6,7 +6,11 @@ import { getStripeJs } from "../../services/stripe-js";
 
 import styles from "./styles.module.scss";
 
-const SubscribeButton: React.FC = () => {
+type Props = {
+  priceId: string;
+};
+
+const SubscribeButton: React.FC<Props> = ({ priceId: string }) => {
   const [session] = useSession();
   const router = useRouter();
 
