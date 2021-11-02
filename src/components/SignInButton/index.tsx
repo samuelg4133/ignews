@@ -29,7 +29,7 @@ const SignInButton: React.FC = () => {
       }}
     >
       <FaGithub color="#eba417" />
-      Sign with GitHub
+      Sign in with GitHub
     </button>
   );
 };
